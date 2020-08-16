@@ -15,10 +15,12 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     height: 150px;
+    
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:20px;
   }
   /*End of .bgHeader that will influence all <MainHeader/> component*/
   
@@ -41,7 +43,8 @@ html {
       background-size: stretch;
       background-repeat: no-repeat;
       display: flex;
-      margin: auto;
+      margin: 15px auto 15px auto;
+      
   
      
     }

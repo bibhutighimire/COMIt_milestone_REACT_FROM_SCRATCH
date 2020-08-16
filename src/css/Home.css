@@ -62,7 +62,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   height: auto;
   margin-top: auto;
@@ -78,20 +78,26 @@ img {
   padding-top: 10px;
 }
 
-ul {
-  list-style-type: none;
-  text-align: center;
-  width: 90%;
-  color: #b90000;
-} /*End of the controls of the img, title and summary of the food*/
 
-li {
-  color: #b90000;
-}
 .pHome {
-  color: #b90000;
+  color: #ffffff;
   font-style: italic;
   font-weight: 700;
+}
+.foodtitle {
+  margin:0 auto;
+  color: #ffffff;
+  list-style: none;
+ 
+}
+.foodText {
+  margin:0 auto;
+  color: #ffffff;
+  list-style: none;
+}
+.recipeText {
+  margin: 0 auto;
+ 
 }
 /* //for desktop */
 @media only screen and (min-width: 700px) {

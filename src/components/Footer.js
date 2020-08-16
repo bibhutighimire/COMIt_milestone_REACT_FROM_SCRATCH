@@ -20,17 +20,17 @@ const Footer = () => (
     </Link> </div>
     <div className="footerIcons"> 
 
-    <Link to="/GirlRec">
+    <Link to="/Home">
       <FontAwesomeIcon icon={faHamburger} />
       <p className="footerText">Good Girls</p>
     </Link></div>
     <div className="footerIcons"> 
-    <Link to="/Recipes">
+    <Link to="/Home">
       <FontAwesomeIcon icon={faSearch} />
       <p className="footerText">Search</p>
     </Link></div>
     <div className="footerIcons"> 
-    <Link to="/MyGoodRecipes">      
+    <Link to="/Home">      
       <FontAwesomeIcon icon={faHeart} />
       <p className="footerText">Faves</p>
     </Link> </div>
