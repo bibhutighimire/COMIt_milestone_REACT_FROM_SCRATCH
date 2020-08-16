@@ -20,20 +20,23 @@ const Footer = () => (
     </Link> </div>
     <div className="footerIcons"> 
 
-    <Link to="/Home">
+    <Link to="/RecipePage">
       <FontAwesomeIcon icon={faHamburger} />
-      <p className="footerText">Good Girls</p>
+      <p className="footerText">Recipe</p>
     </Link></div>
+
     <div className="footerIcons"> 
     <Link to="/Home">
       <FontAwesomeIcon icon={faSearch} />
       <p className="footerText">Search</p>
     </Link></div>
+
     <div className="footerIcons"> 
-    <Link to="/Home">      
+    <Link to="/RecipeFav">      
       <FontAwesomeIcon icon={faHeart} />
       <p className="footerText">Faves</p>
     </Link> </div>
+    
     <div className="footerIcons">
     <Link to="/ContactUs">
       <FontAwesomeIcon icon={faEnvelope} />

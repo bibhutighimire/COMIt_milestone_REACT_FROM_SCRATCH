@@ -9,7 +9,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="recGalleryContainer">
-      <Header titleHeader="Welcome to Recipe Page"/>
+      <Header titleHeader="Welcome to Recipe Home Page"/>
         <p className="pHome">Welcome! This site is dedicated to our love for all things delicious. We love breakfast, lunch, and dinner, so here are a few good eats to get you started. Enjoy!</p> 
        
 
