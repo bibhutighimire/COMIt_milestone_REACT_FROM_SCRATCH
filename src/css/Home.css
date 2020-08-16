@@ -1,0 +1,174 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.recGalleryContainer {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+/*change the color of h2 font since h2 is the child of recGalleryContainer*/
+.recGalleryContainer h2 {
+  color: #b90000;
+}
+
+.eggBenedictBreakfast {
+  background-image: url("../images/eggsbenny.jpg");
+  /* source https://www.pexels.com/photo/cooked-food-704569/ */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  border-radius: 15px;
+}
+
+.lunchSandwich {
+  background-image: url("../images/burger2.jpg");
+  /* source https://www.pexels.com/photo/bread-burger-cheese-delicious-580612/ */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  padding: 0;
+  border-radius: 15px;
+}
+
+.dinnerStew {
+  background-image: url("../images/lamb.jpg");
+  /* source: https://www.pexels.com/photo/close-up-of-meal-served-in-plate-323682/ */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  padding: 0;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+
+/*Start of creating the overlay so for the img, title, and summary so it can be read*/
+.overlay {
+  background-color: rgba(201, 0, 0, 0.7);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  padding: 15px;
+  border-radius: 15px;
+  
+} /*End of creating the overlay*/
+
+/*Start of the controls of the img, title and summary of the food.*/
+img {
+  max-width: 300px;
+  width: 90%;
+  padding-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  width: 90%;
+  color: #b90000;
+} /*End of the controls of the img, title and summary of the food*/
+
+li {
+  color: #b90000;
+}
+.pHome {
+  color: #b90000;
+  font-style: italic;
+  font-weight: 700;
+}
+/* //for desktop */
+@media only screen and (min-width: 700px) {
+ 
+  .eggBenedictBreakfast {
+    background-image: url("../images/eggsbenny.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 77%;
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 3px;
+    border-radius: 15px;
+  }
+  
+  
+  .lunchSandwich {
+    background-image: url("../images/burger2.jpg");
+    /* source https://www.pexels.com/photo/bread-burger-cheese-delicious-580612/ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    padding: 0;
+    margin-bottom: 3px;
+    border-radius: 15px;
+  }
+  
+  .dinnerStew {
+    background-image: url("../images/lamb.jpg");
+    /* source: https://www.pexels.com/photo/close-up-of-meal-served-in-plate-323682/ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    padding: 0;
+    margin-bottom: 200px;
+    border-radius: 15px;
+  }
+  .foodtitle {
+    color: white;
+    font-size: x-large;
+  }
+  .foodText {
+    color: white;
+    font-size: large;
+  }
+  .pHome{
+    color: #b90000;
+    font-style: italic;
+    font-weight: 700;
+    width: 80%;
+  }
+  .bgHeader {
+    background-image: url(../images/logo.png);
+    height: 200px;
+    background-size: stretch;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+   width: 80%;
+  }
+  h1 {
+    text-align: center;
+    vertical-align: center;
+    height: 200px;
+    background-color: rgba(226, 40, 77, 0.6);
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+    border: 2px solid black;
+ 
+  }
+}
+  
