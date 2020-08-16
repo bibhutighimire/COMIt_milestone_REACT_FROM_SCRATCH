@@ -4,7 +4,7 @@ https://api.spoonacular.com/recipes/716429/information?apiKey=c5413da4ad594941bc
 */
 
 
-const ourInfo = [
+const recipeData = [
     {
       preparationMinutes: 5,
       cookingMinutes: 10,
@@ -28063,6 +28063,6 @@ const ourInfo = [
     },
   ];
   
-  export default ourInfo;
+  export default recipeData;
   //Default export of all of the information as a 'live' API
   
