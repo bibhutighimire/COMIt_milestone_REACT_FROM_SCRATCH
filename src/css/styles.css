@@ -29,7 +29,7 @@ html {
     text-align: center;
     vertical-align: center;
     height: 33%;
-    background-color: rgb(245, 158, 158);
+    background-color:#b90000;
     width: 100%;
     font-size: 2rem;
   }
@@ -52,7 +52,7 @@ html {
       text-align: center;
       vertical-align: center;
       height: 40%;
-      background-color:#ff0000;
+      background-color:#b90000;
       width: 100%;
       margin: 0 auto;
       font-size: 2rem;
