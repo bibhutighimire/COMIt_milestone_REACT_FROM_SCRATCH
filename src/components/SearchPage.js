@@ -57,13 +57,14 @@ return (
        </form>
 <ul>
        {this.state.recipeList.map((recipe) =>
-          (
+       recipe.map((indrecipe) => (
+          
             <li>
             <div className="recipeCard" key={uuid()}>
-              <h2>{recipe.title ? recipe.title : <>Not Available</>}</h2>
+              <h2>{indrecipe.title ? indrecipe.title : <>Not Available</>}</h2>
        </div>
        </li>
-          ))}
+       )))}
          
           </ul>
         <Footer />
