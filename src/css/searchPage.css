@@ -2,7 +2,11 @@
   width: 60%;
   margin: 0 auto;
 }
-.searchInput {
+form {
+  margin: 0 auto;
+  background-color: white;
+}
+form .searchInput {
   width: 600px;
   height: 30px;
   margin-right: 25px;
@@ -11,7 +15,7 @@
 
 
 }
-button {
+form button {
   background-color: #b90000;
   padding:10px;
   color: white;
