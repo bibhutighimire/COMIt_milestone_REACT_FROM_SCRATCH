@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import recipeData from "../data";
 import { v4 as uuid } from "uuid";
+import "../css/MyGoodRecipe.css";
 
 class SearchPage extends React.Component {
   constructor(props) {
@@ -55,7 +56,95 @@ return (
        <button type="submit" id="btnSubmit" >Search</button>
       
        </form>
-<ul>
+
+
+       <div className="favContainer">
+                    <ul>
+                        {this.state.recipeList.map((recipes) =>
+                         recipes.map((indRecipe) =>
+                        <li key={uuid()}>
+                            <div className="binder">
+                            <div className="imgAndTitleBind">
+                            <h2>{indRecipe.title}</h2>
+                    <figure>
+<img src={indRecipe.image} alt="food" />
+
+                    </figure>
+                    
+                    </div>
+                    <div className="textsBind">
+                    <figcaption>
+                    <ul>
+                    <li className="label">{indRecipe.summary
+                        ? indRecipe.summary.replace(/(<([^>]+)>)/gi, "")
+                        : ""} </li>
+
+{/* <li>
+                      <span className="topicHeader">Ingredients: </span>
+                      <span className="topicP">
+                        {indRecipe.analyzedInstructions ? (
+                          recipes.analyzedInstructions.map(
+                            (analyzedInstruction) =>
+                              analyzedInstruction.steps.map((stepsInd) =>
+                                stepsInd.ingredients.map((ingredient) => (
+                                  <div key={uuid()}>
+                                    {ingredient.name ? (
+                                      ingredient.name
+                                    ) : (
+                                      <>Not available</>
+                                    )}
+                                    ,{" "}
+                                  </div>
+                                ))
+                              )
+                          )
+                        ) : (
+                          <>Not Avaialble</>
+                        )}
+                      </span>
+                    </li> */}
+
+                    <li>
+                      <span className="topicHeader">Total Time: </span>
+                      <span className="topicP">
+                        {indRecipe.readyInMinutes ? (
+                          <>{indRecipe.readyInMinutes} minutes</>
+                        ) : (
+                          <>Not Available</>
+                        )}
+                      </span>
+                    </li>
+                    <li>
+                      <span className="topicHeader">Influenced By: </span>
+                      <span className="topicP">
+                        <a
+                          href={indRecipe.sourceUrl ? indRecipe.sourceUrl : ""}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          Click Here to check out their URL
+                        </a>
+                      </span>
+                    </li>
+
+                    </ul>
+                    </figcaption>
+                    </div>
+                    </div>
+                    </li>
+                        ))
+                    }
+                    </ul>
+                </div>
+
+        <Footer />
+      </div>
+      
+          );
+          }
+        }
+export default (SearchPage);
+{/* <ul>
        {this.state.recipeList.map((recipe) =>
        recipe.map((indrecipe) => (
           
@@ -66,11 +155,4 @@ return (
        </li>
        )))}
          
-          </ul>
-        <Footer />
-      </div>
-      
-          );
-          }
-        }
-export default (SearchPage);
+          </ul> */}
