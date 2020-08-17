@@ -18,11 +18,15 @@ class RecipePage extends React.Component {
                     <ul>
                         {recipeData.map((recipes) => 
                         <li>
+                            <div className="binder">
+                            <div className="imgAndTitleBind">
                             <h2>{recipes.title}</h2>
                     <figure>
 <img src={recipes.image} alt="food" />
 
                     </figure>
+                    </div>
+                    <div className="textsBind">
                     <figcaption>
                     <ul>
                     <li className="label">{recipes.summary
@@ -79,10 +83,13 @@ class RecipePage extends React.Component {
 
                     </ul>
                     </figcaption>
+                    </div>
+                    </div>
                     </li>
                     )}
                     </ul>
                 </div>
+                
                 <Footer />
             </div>
         );

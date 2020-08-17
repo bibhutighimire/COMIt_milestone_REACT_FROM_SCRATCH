@@ -76,14 +76,14 @@ p {
 }
 @media only screen and (min-width: 800px) {
   figure {
-    width: 80%;
+    width: 75%;
     margin: auto;
     padding: 30px;
-    border-bottom: 1px dotted black;
+    
     display: flex;
   }
   .searchForm {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     margin-top: 20px;
   }
@@ -92,5 +92,23 @@ p {
   }
   .favContainer {
     margin-bottom: 150px;
+    width: 75%;
+  }
+  .imgAndTitleBind {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 25%;
+  }
+  .textsBind {
+    display: flex;  
+    justify-content:left;
+    width: 50%;
+    
+  }
+  .binder {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
   }
 }
