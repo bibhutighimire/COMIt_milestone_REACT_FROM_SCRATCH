@@ -17,8 +17,9 @@ class RecipePage extends React.Component {
                     <ul>
                         {recipeData.map((recipes) => 
                         <li>
+                            <h2>{recipes.title}</h2>
                     <figure>
-{recipes.image}
+<img src={recipes.image} alt="food" />
 
                     </figure>
                     </li>
