@@ -4,6 +4,7 @@ import "../css/Home.css";
 import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+
 import recipeData from "../data";
 import { v4 as uuid } from "uuid";
 
@@ -17,7 +18,7 @@ class RecipePage extends React.Component {
                 <div className="favContainer">
                     <ul>
                         {recipeData.map((recipes) => 
-                        <li>
+                        <li key={uuid()}>
                             <div className="binder">
                             <div className="imgAndTitleBind">
                             <h2>{recipes.title}</h2>

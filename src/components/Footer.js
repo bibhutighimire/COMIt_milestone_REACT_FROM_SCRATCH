@@ -26,7 +26,7 @@ const Footer = () => (
     </Link></div>
 
     <div className="footerIcons"> 
-    <Link to="/Home">
+    <Link to="/SearchPage">
       <FontAwesomeIcon icon={faSearch} />
       <p className="footerText">Search</p>
     </Link></div>
