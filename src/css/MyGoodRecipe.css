@@ -76,11 +76,12 @@ p {
 }
 @media only screen and (min-width: 800px) {
   figure {
-    width: 75%;
-    margin: auto;
-    padding: 30px;
+    width: 60%;
     
-    display: flex;
+  }
+  .imgAndTitleBind figure img {
+    width: 400px;
+    margin: 0px;
   }
   .searchForm {
     width: 75%;
@@ -92,13 +93,13 @@ p {
   }
   .favContainer {
     margin-bottom: 150px;
-    width: 75%;
+    width: 60%;
   }
   .imgAndTitleBind {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    width: 25%;
+    width: 50%;
   }
   .textsBind {
     display: flex;  
